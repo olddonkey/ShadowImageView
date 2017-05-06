@@ -10,7 +10,9 @@ ShadowImageView is a iOS 10 Apple Music style image view, help you create elegen
 
 ## Renderings
 
-![ShadowOffsetRight](Screenshots/Rightoffset.png) ![Nooffset](Screenshots/NoOffset.png) ![largeRadius](Screenshots/largeRadius.png) ![lotus](Screenshots/lotus.png) ![Mountain](Screenshots/Mountain.png) ![CD1](Screenshots/CD1.png) ![CD2](Screenshots/CD2.png)
+![ShadowOffsetRight](Screenshots/Rightoffset.png) ![Nooffset](Screenshots/NoOffset.png) ![largeRadius](Screenshots/largeRadius.png) 
+
+![lotus](Screenshots/lotus.png) ![Mountain](Screenshots/Mountain.png) ![CD1](Screenshots/CD1.png) ![CD2](Screenshots/CD2.png)
 
 
 ## Features

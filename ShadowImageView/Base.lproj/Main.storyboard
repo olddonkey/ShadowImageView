@@ -29,12 +29,12 @@
                                     <constraint firstAttribute="width" constant="300" id="B2w-QQ-JTJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="prairie-679016_1920.jpg"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="cd_cover.jpg"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusOffSetPercentage">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageCornerRaidus">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetByX">
                                         <real key="value" value="0.0"/>
@@ -60,6 +60,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="prairie-679016_1920.jpg" width="500" height="502"/>
+        <image name="cd_cover.jpg" width="420" height="420"/>
     </resources>
 </document>

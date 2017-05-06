@@ -74,7 +74,7 @@ class ShadowImageView: UIView {
     }
     
     @IBInspectable
-    public var shadowAlpha: CGFloat = 0 {
+    public var shadowAlpha: CGFloat = 1 {
         didSet{
             blurredImageView.alpha = shadowAlpha
         }

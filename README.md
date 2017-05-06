@@ -73,7 +73,7 @@ github "olddonkey/ShadowImageView"
     public var shadowOffSetByY: CGFloat
     
     @IBInspectable
-    public var shadowAlpha: CGFloat = 0
+    public var shadowAlpha: CGFloat
 
 ```
 

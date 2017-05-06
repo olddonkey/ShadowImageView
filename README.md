@@ -8,6 +8,10 @@ A apple music cover picture shadow style image library
 
 ShadowImageView is a iOS 10 Apple Music style image view, help you create elegent image with shadow.
 
+## Renderings
+
+![]
+
 ## Features
 
 - [x] Auto resizing based on content mode.

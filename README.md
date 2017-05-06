@@ -1,16 +1,16 @@
 # ShadowImageView
-A apple music cover picture shadow style image library
-
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage) 
 ![CocoaPods Support](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg) 
 ![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg) 
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
 
+A apple music cover picture shadow style image library
+
 ShadowImageView is a iOS 10 Apple Music style image view, help you create elegent image with shadow.
 
 ## Renderings
 
-![]
+![ShadowOffsetRight](Screenshots/Rightoffset.png) ![Nooffset](Screenshots/NoOffset.png)
 
 ## Features
 

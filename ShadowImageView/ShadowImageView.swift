@@ -73,6 +73,13 @@ class ShadowImageView: UIView {
         }
     }
     
+    @IBInspectable
+    public var shadowAlpha: CGFloat = 0 {
+        didSet{
+            blurredImageView.alpha = shadowAlpha
+        }
+    }
+    
     /// Generate the background color and set it to a image view.
     private func generateBlurBackground(){
         DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async {
@@ -158,6 +165,7 @@ class ShadowImageView: UIView {
         blurredImageView.frame = newBounds
         blurredImageView.center = CGPoint(x: bounds.width/2 + shadowOffSetByX, y: bounds.height/2 + shadowOffSetByY)
         blurredImageView.contentMode = contentMode
+        blurredImageView.alpha = shadowAlpha
         
         addSubview(blurredImageView)
         sendSubview(toBack: blurredImageView)

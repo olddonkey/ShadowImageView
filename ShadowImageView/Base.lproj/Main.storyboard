@@ -29,12 +29,12 @@
                                     <constraint firstAttribute="width" constant="300" id="B2w-QQ-JTJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Kodaline_-_In_A_Perfect_World.jpg"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="prairie-679016_1920.jpg"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusOffSetPercentage">
-                                        <real key="value" value="3"/>
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageCornerRaidus">
-                                        <real key="value" value="6"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetByX">
                                         <real key="value" value="0.0"/>
@@ -57,6 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Kodaline_-_In_A_Perfect_World.jpg" width="300" height="300"/>
+        <image name="prairie-679016_1920.jpg" width="500" height="502"/>
     </resources>
 </document>

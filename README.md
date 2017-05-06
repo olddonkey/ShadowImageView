@@ -23,6 +23,8 @@ ShadowImageView is a iOS 10 Apple Music style image view, help you create elegen
 
 ## Usage
 
+### Import
+
 #### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `ShadowImageView` by adding it to your `Podfile`:
 
@@ -40,7 +42,40 @@ github "olddonkey/ShadowImageView"
 ```
 #### Manually
 1. Download and drop ```ShadowImageView.swift``` in your project.  
-2. Congratulations!  
+2. Congratulations!
+
+### Parameters
+
+```swift
+    /// Gaussian Blur radius, larger will make the back ground shadow lighter (warning: do not set it too large, 2 or 3 for most cases)
+    @IBInspectable
+    public var blurRadius: CGFloat
+    
+    /// The image view contains target image
+    @IBInspectable
+    public var image: UIImage
+    
+    /// Image's corner radius
+    @IBInspectable
+    public var imageCornerRaidus: CGFloat
+    
+    /// shadow radius offset in percentage, if you want shadow radius larger, set a postive number for this, if you want it be smaller, then set a negative number
+    @IBInspectable
+    public var shadowRadiusOffSetPercentage: CGFloat
+    
+    /// Shadow offset value on x axis, postive -> right, negative -> left
+    @IBInspectable
+    public var shadowOffSetByX: CGFloat
+    
+    
+    /// Shadow offset value on y axis, postive -> right, negative -> left
+    @IBInspectable
+    public var shadowOffSetByY: CGFloat
+    
+    @IBInspectable
+    public var shadowAlpha: CGFloat = 0
+
+```
 
 If you want to add by storyboard or nib, just drap a UIView into your canvas, and change the class to ShadowImageView, you will see the change in storyboard or nib, it is @IBDesignable supported.
 

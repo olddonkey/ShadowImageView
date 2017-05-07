@@ -8,6 +8,7 @@ A apple music cover picture shadow style image library
 
 ShadowImageView is a iOS 10 Apple Music style image view, help you create elegent image with shadow.
 
+
 ## Renderings
 
 ![ShadowOffsetRight](Screenshots/Rightoffset.png) ![Nooffset](Screenshots/NoOffset.png) ![largeRadius](Screenshots/largeRadius.png) 
@@ -21,12 +22,14 @@ ShadowImageView is a iOS 10 Apple Music style image view, help you create elegen
 - [x] Easy to change paramenters including offset, radius, alpha etc.
 - [x] Storyboard(Nib) support.
 
+
 ## TODO
 
 - [ ] Add support for UIView.
 - [ ] Change the way of layout, to minimize the resource usa.
 
 ## Usage
+
 
 ### Import
 
@@ -84,6 +87,7 @@ github "olddonkey/ShadowImageView"
 
 If you want to add by storyboard or nib, just drap a UIView into your canvas, and change the class to ShadowImageView, you will see the change in storyboard or nib, it is @IBDesignable supported.
 
+
 ## Requirements
 
 - iOS 8.0+
@@ -91,13 +95,16 @@ If you want to add by storyboard or nib, just drap a UIView into your canvas, an
 
 The main development of ShadowImageView is based on Swift 3.
 
+
 ### Contact
 
 Follow and contact me through email: olddonkeyblog@gmail.com. If you find an issue, just [open a ticket](https://github.com/olddonkey/ShadowImageView/issues/new) on it. Pull requests are warmly welcome as well.
 
+
 ### License
 
 ShadowImageView is released under the MIT license. See LICENSE for details.
+
 
 ### Kudos
 

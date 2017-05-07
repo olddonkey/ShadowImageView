@@ -48,6 +48,16 @@
                ReferencedContainer = "container:ShadowImageView.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A2240E201EBF7E84006FBF24"
+               BuildableName = "ShadowImageViewFrameworkTests.xctest"
+               BlueprintName = "ShadowImageViewFrameworkTests"
+               ReferencedContainer = "container:ShadowImageView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

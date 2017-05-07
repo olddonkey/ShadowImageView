@@ -21,6 +21,11 @@ ShadowImageView is a iOS 10 Apple Music style image view, help you create elegen
 - [x] Easy to change paramenters including offset, radius, alpha etc.
 - [x] Storyboard(Nib) support.
 
+## TODO
+
+- [] Add support for UIView.
+- [] Change the way of layout, to minimize the resource usa.
+
 ## Usage
 
 ### Import

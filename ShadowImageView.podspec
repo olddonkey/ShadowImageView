@@ -29,7 +29,7 @@ ShadowImageView is a iOS 10 Apple Music style image view, help you create elegen
                    DESC
 
   s.homepage     = "https://github.com/olddonkey/ShadowImageView"
-  s.screenshots  = "https://github.com/olddonkey/ShadowImageView/tree/master/Screenshots"
+  s.screenshots  = "https://raw.githubusercontent.com/olddonkey/ShadowImageView/master/Screenshots/CD2.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

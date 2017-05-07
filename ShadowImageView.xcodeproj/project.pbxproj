@@ -14,12 +14,12 @@
 		A2240DD01EB55310006FBF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2240DCE1EB55310006FBF24 /* LaunchScreen.storyboard */; };
 		A2240DDB1EB55310006FBF24 /* ShadowImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DDA1EB55310006FBF24 /* ShadowImageViewTests.swift */; };
 		A2240DE61EB55310006FBF24 /* ShadowImageViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DE51EB55310006FBF24 /* ShadowImageViewUITests.swift */; };
-		A2240DF41EB5533D006FBF24 /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DF31EB5533D006FBF24 /* ShadowImageView.swift */; };
-		A2240DF61EB5557A006FBF24 /* italy-2080072_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240DF51EB5557A006FBF24 /* italy-2080072_640.jpg */; };
-		A2240DFD1EBAF2C2006FBF24 /* lotus-978659_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240DFB1EBAF2C2006FBF24 /* lotus-978659_1920.jpg */; };
-		A2240DFE1EBAF2C2006FBF24 /* prairie-679016_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240DFC1EBAF2C2006FBF24 /* prairie-679016_1920.jpg */; };
-		A2240E001EBAF715006FBF24 /* cd_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240DFF1EBAF714006FBF24 /* cd_cover.jpg */; };
-		A2240E021EBAF85B006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240E011EBAF85B006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg */; };
+		A2240E091EBE5D8A006FBF24 /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240E081EBE5D8A006FBF24 /* ShadowImageView.swift */; };
+		A2240E0F1EBE5DEA006FBF24 /* cd_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240E0A1EBE5DEA006FBF24 /* cd_cover.jpg */; };
+		A2240E101EBE5DEA006FBF24 /* italy-2080072_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240E0B1EBE5DEA006FBF24 /* italy-2080072_640.jpg */; };
+		A2240E111EBE5DEA006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240E0C1EBE5DEA006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg */; };
+		A2240E121EBE5DEA006FBF24 /* lotus-978659_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240E0D1EBE5DEA006FBF24 /* lotus-978659_1920.jpg */; };
+		A2240E131EBE5DEA006FBF24 /* prairie-679016_1920.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2240E0E1EBE5DEA006FBF24 /* prairie-679016_1920.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +53,12 @@
 		A2240DE11EB55310006FBF24 /* ShadowImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShadowImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2240DE51EB55310006FBF24 /* ShadowImageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowImageViewUITests.swift; sourceTree = "<group>"; };
 		A2240DE71EB55310006FBF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2240DF31EB5533D006FBF24 /* ShadowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowImageView.swift; sourceTree = "<group>"; };
-		A2240DF51EB5557A006FBF24 /* italy-2080072_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "italy-2080072_640.jpg"; sourceTree = "<group>"; };
-		A2240DFB1EBAF2C2006FBF24 /* lotus-978659_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lotus-978659_1920.jpg"; sourceTree = "<group>"; };
-		A2240DFC1EBAF2C2006FBF24 /* prairie-679016_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "prairie-679016_1920.jpg"; sourceTree = "<group>"; };
-		A2240DFF1EBAF714006FBF24 /* cd_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cd_cover.jpg; sourceTree = "<group>"; };
-		A2240E011EBAF85B006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kodaline_-_In_A_Perfect_World.jpg"; sourceTree = "<group>"; };
+		A2240E081EBE5D8A006FBF24 /* ShadowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShadowImageView.swift; path = Sources/ShadowImageView.swift; sourceTree = SOURCE_ROOT; };
+		A2240E0A1EBE5DEA006FBF24 /* cd_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cd_cover.jpg; path = Images/cd_cover.jpg; sourceTree = "<group>"; };
+		A2240E0B1EBE5DEA006FBF24 /* italy-2080072_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "italy-2080072_640.jpg"; path = "Images/italy-2080072_640.jpg"; sourceTree = "<group>"; };
+		A2240E0C1EBE5DEA006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Kodaline_-_In_A_Perfect_World.jpg"; path = "Images/Kodaline_-_In_A_Perfect_World.jpg"; sourceTree = "<group>"; };
+		A2240E0D1EBE5DEA006FBF24 /* lotus-978659_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "lotus-978659_1920.jpg"; path = "Images/lotus-978659_1920.jpg"; sourceTree = "<group>"; };
+		A2240E0E1EBE5DEA006FBF24 /* prairie-679016_1920.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "prairie-679016_1920.jpg"; path = "Images/prairie-679016_1920.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,7 @@
 		A2240DC41EB55310006FBF24 /* ShadowImageView */ = {
 			isa = PBXGroup;
 			children = (
+				A2240E051EBE5D0F006FBF24 /* Sources */,
 				A2240E031EBD6F74006FBF24 /* images */,
 				A2240DC51EB55310006FBF24 /* AppDelegate.swift */,
 				A2240DC71EB55310006FBF24 /* ViewController.swift */,
@@ -116,7 +117,6 @@
 				A2240DCC1EB55310006FBF24 /* Assets.xcassets */,
 				A2240DCE1EB55310006FBF24 /* LaunchScreen.storyboard */,
 				A2240DD11EB55310006FBF24 /* Info.plist */,
-				A2240DF31EB5533D006FBF24 /* ShadowImageView.swift */,
 			);
 			path = ShadowImageView;
 			sourceTree = "<group>";
@@ -142,13 +142,21 @@
 		A2240E031EBD6F74006FBF24 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				A2240DF51EB5557A006FBF24 /* italy-2080072_640.jpg */,
-				A2240E011EBAF85B006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg */,
-				A2240DFF1EBAF714006FBF24 /* cd_cover.jpg */,
-				A2240DFB1EBAF2C2006FBF24 /* lotus-978659_1920.jpg */,
-				A2240DFC1EBAF2C2006FBF24 /* prairie-679016_1920.jpg */,
+				A2240E0A1EBE5DEA006FBF24 /* cd_cover.jpg */,
+				A2240E0B1EBE5DEA006FBF24 /* italy-2080072_640.jpg */,
+				A2240E0C1EBE5DEA006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg */,
+				A2240E0D1EBE5DEA006FBF24 /* lotus-978659_1920.jpg */,
+				A2240E0E1EBE5DEA006FBF24 /* prairie-679016_1920.jpg */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		A2240E051EBE5D0F006FBF24 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A2240E081EBE5D8A006FBF24 /* ShadowImageView.swift */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,14 +269,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2240E021EBAF85B006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg in Resources */,
-				A2240DFD1EBAF2C2006FBF24 /* lotus-978659_1920.jpg in Resources */,
-				A2240DF61EB5557A006FBF24 /* italy-2080072_640.jpg in Resources */,
+				A2240E0F1EBE5DEA006FBF24 /* cd_cover.jpg in Resources */,
 				A2240DD01EB55310006FBF24 /* LaunchScreen.storyboard in Resources */,
 				A2240DCD1EB55310006FBF24 /* Assets.xcassets in Resources */,
-				A2240DFE1EBAF2C2006FBF24 /* prairie-679016_1920.jpg in Resources */,
 				A2240DCB1EB55310006FBF24 /* Main.storyboard in Resources */,
-				A2240E001EBAF715006FBF24 /* cd_cover.jpg in Resources */,
+				A2240E111EBE5DEA006FBF24 /* Kodaline_-_In_A_Perfect_World.jpg in Resources */,
+				A2240E101EBE5DEA006FBF24 /* italy-2080072_640.jpg in Resources */,
+				A2240E121EBE5DEA006FBF24 /* lotus-978659_1920.jpg in Resources */,
+				A2240E131EBE5DEA006FBF24 /* prairie-679016_1920.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2240DF41EB5533D006FBF24 /* ShadowImageView.swift in Sources */,
+				A2240E091EBE5D8A006FBF24 /* ShadowImageView.swift in Sources */,
 				A2240DC81EB55310006FBF24 /* ViewController.swift in Sources */,
 				A2240DC61EB55310006FBF24 /* AppDelegate.swift in Sources */,
 			);
@@ -548,6 +556,7 @@
 				A2240DEC1EB55310006FBF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2240DED1EB55310006FBF24 /* Build configuration list for PBXNativeTarget "ShadowImageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +565,7 @@
 				A2240DEF1EB55310006FBF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2240DF01EB55310006FBF24 /* Build configuration list for PBXNativeTarget "ShadowImageViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +574,7 @@
 				A2240DF21EB55310006FBF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

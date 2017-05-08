@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A2240E181EBF7E84006FBF24"
-               BuildableName = "ShadowImageViewFramework.framework"
+               BuildableName = "ShadowImageView.framework"
                BlueprintName = "ShadowImageViewFramework"
                ReferencedContainer = "container:ShadowImageView.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2240E181EBF7E84006FBF24"
-            BuildableName = "ShadowImageViewFramework.framework"
+            BuildableName = "ShadowImageView.framework"
             BlueprintName = "ShadowImageViewFramework"
             ReferencedContainer = "container:ShadowImageView.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A2240E181EBF7E84006FBF24"
-            BuildableName = "ShadowImageViewFramework.framework"
+            BuildableName = "ShadowImageView.framework"
             BlueprintName = "ShadowImageViewFramework"
             ReferencedContainer = "container:ShadowImageView.xcodeproj">
          </BuildableReference>

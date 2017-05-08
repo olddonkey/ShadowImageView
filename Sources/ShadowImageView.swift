@@ -80,18 +80,18 @@ class ShadowImageView: UIView {
     /// Generate the background color and set it to a image view.
     private func generateBlurBackground() {
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
-            guard self != nil else {
+            guard let weakself = self else {
                 return
             }
 
-            let realImageSize = self!.getRealImageSize(self!.image)
+            let realImageSize = weakself.getRealImageSize(weakself.image)
             // Create a containerView to hold the image should apply gaussian blur.
             let containerView = UIView(frame: CGRect(origin: .zero, size: realImageSize.scaled(by: 1.4)))
             containerView.backgroundColor = .clear
             let blurImageView = UIImageView(frame: CGRect(origin: .zero, size: realImageSize))
             blurImageView.center = containerView.center
-            blurImageView.image = self!.image
-            blurImageView.layer.cornerRadius = self!.imageCornerRaidus
+            blurImageView.image = weakself.image
+            blurImageView.layer.cornerRadius = weakself.imageCornerRaidus
             blurImageView.layer.masksToBounds = true
             containerView.addSubview(blurImageView)
 
@@ -100,7 +100,7 @@ class ShadowImageView: UIView {
 
             guard let resizedContainerImage = containerImage.resized(withPercentage: 0.2),
                 let ciimage = CIImage(image: resizedContainerImage),
-                let blurredImage = self!.applyBlur(ciimage: ciimage) else {
+                let blurredImage = weakself.applyBlur(ciimage: ciimage) else {
                     return
             }
 
@@ -175,15 +175,13 @@ class ShadowImageView: UIView {
         imageView.layer.cornerRadius = imageCornerRaidus
         imageView.layer.masksToBounds = true
         imageView.contentMode = contentMode
-        imageView.layer.shadowColor = UIColor.black.cgColor
-        imageView.layer.shadowRadius = 13
-        imageView.layer.shadowOffset = CGSize(width: 12, height: 12)
         addSubview(imageView)
     }
 
 }
 
 private extension CGSize {
+    
     /// Generates a new size that is this size scaled by a cerntain percentage
     ///
     /// - Parameter percentage: the percentage to scale to
@@ -191,6 +189,7 @@ private extension CGSize {
     func scaled(by percentage: CGFloat) -> CGSize {
         return CGSize(width: width * percentage, height: height * percentage)
     }
+    
 }
 
 private extension UIImage {

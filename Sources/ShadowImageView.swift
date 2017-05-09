@@ -119,9 +119,10 @@ class ShadowImageView: UIView {
         if let filter = CIFilter(name: "CIGaussianBlur") {
             filter.setValue(ciimage, forKey: kCIInputImageKey)
             filter.setValue(blurRadius, forKeyPath: kCIInputRadiusKey)
-            let context = CIContext(options: nil)
-            if let output = filter.outputImage, let cgimage = context.createCGImage(output, from: ciimage.extent) {
-                return UIImage(cgImage: cgimage)
+            if let output = filter.outputImage {
+                let croped = output.cropping(to: ciimage.extent)
+                let image = UIImage(ciImage: croped)
+                return image
             }
         }
         return nil

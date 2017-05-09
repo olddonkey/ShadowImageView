@@ -26,13 +26,13 @@ class ShadowImageView: UIView {
 
     /// The image view contains target image
     @IBInspectable
-    public var image: UIImage {
+    public var image: UIImage? {
         set {
             imageView.image = newValue
             layoutShadow()
         }
         get {
-            return imageView.image ?? UIImage()
+            return imageView.image
         }
     }
 
@@ -76,6 +76,17 @@ class ShadowImageView: UIView {
             blurredImageView.alpha = shadowAlpha
         }
     }
+    
+    override var contentMode: UIViewContentMode {
+        didSet{
+            layoutShadow()
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layoutShadow()
+    }
 
     /// Generate the background color and set it to a image view.
     private func generateBlurBackground() {
@@ -83,20 +94,27 @@ class ShadowImageView: UIView {
             guard let weakself = self else {
                 return
             }
-
-            let realImageSize = weakself.getRealImageSize(weakself.image)
+            guard let image = weakself.image else{
+                return
+            }
+            let realImageSize = weakself.getRealImageSize(image)
             // Create a containerView to hold the image should apply gaussian blur.
             let containerView = UIView(frame: CGRect(origin: .zero, size: realImageSize.scaled(by: 1.4)))
             containerView.backgroundColor = .clear
             let blurImageView = UIImageView(frame: CGRect(origin: .zero, size: realImageSize))
             blurImageView.center = containerView.center
-            blurImageView.image = weakself.image
+            blurImageView.image = image
             blurImageView.layer.cornerRadius = weakself.imageCornerRaidus
             blurImageView.layer.masksToBounds = true
             containerView.addSubview(blurImageView)
-
+            
+            var containerImage = UIImage()
             // Get the UIImage from a UIView.
-            let containerImage = UIImage(view: containerView)
+            if containerView.frame.size != CGSize.zero {
+                containerImage = UIImage(view: containerView)
+            }else {
+                containerImage = UIImage()
+            }
 
             guard let resizedContainerImage = containerImage.resized(withPercentage: 0.2),
                 let ciimage = CIImage(image: resizedContainerImage),
@@ -133,10 +151,10 @@ class ShadowImageView: UIView {
     /// - Returns: the real size of the image
     func getRealImageSize(_ from: UIImage) -> CGSize {
         if contentMode == .scaleAspectFit {
-            let scale = min(bounds.size.width / image.size.width, bounds.size.height / image.size.height)
-            return image.size.scaled(by: scale)
+            let scale = min(bounds.size.width / from.size.width, bounds.size.height / from.size.height)
+            return from.size.scaled(by: scale)
         } else {
-            return image.size
+            return from.size
         }
     }
 
@@ -151,6 +169,9 @@ class ShadowImageView: UIView {
     private func layoutShadow() {
 
         generateBlurBackground()
+        guard let image = image else {
+            return
+        }
 
         let realImageSize = getRealImageSize(image)
 

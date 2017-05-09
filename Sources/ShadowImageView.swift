@@ -121,8 +121,7 @@ class ShadowImageView: UIView {
             filter.setValue(blurRadius, forKeyPath: kCIInputRadiusKey)
             if let output = filter.outputImage {
                 let croped = output.cropping(to: ciimage.extent)
-                let image = UIImage(ciImage: croped)
-                return image
+                return UIImage(ciImage: croped)
             }
         }
         return nil

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ShadowImageView"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
 s.summary      = "A UIImageView smillar class that will generate iOS 10 Apple Music style shadow."
 
   # This description is used to generate tags and improve search results.

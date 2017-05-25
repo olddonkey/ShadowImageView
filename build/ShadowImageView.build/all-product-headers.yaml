@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/olddonkey/Documents/OpenSource/ShadowImageView/build/Release-iphoneos/ShadowImageView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ShadowImageView-Swift.h",
+          'external-contents': "/Users/olddonkey/Documents/OpenSource/ShadowImageView/build/Release-iphoneos/ShadowImageView.framework/Headers/ShadowImageView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ShadowImageViewFramework.h",
+          'external-contents': "/Users/olddonkey/Documents/OpenSource/ShadowImageView/ShadowImageViewFramework/ShadowImageViewFramework.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/olddonkey/Documents/OpenSource/ShadowImageView/build/Release-iphoneos/ShadowImageView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/olddonkey/Documents/OpenSource/ShadowImageView/build/ShadowImageView.build/Release-iphoneos/ShadowImageViewFramework.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

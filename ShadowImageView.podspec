@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ShadowImageView"
-  s.version      = "1.2.0"
+  s.version      = "1.3.0"
 s.summary      = "A UIImageView smillar class that will generate iOS 10 Apple Music style shadow."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ ShadowImageView is a iOS 10 Apple Music style image view, help you create elegen
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Sources/*.swift"
+  s.source_files  = "Sources", "Sources/Extension+CIContext"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

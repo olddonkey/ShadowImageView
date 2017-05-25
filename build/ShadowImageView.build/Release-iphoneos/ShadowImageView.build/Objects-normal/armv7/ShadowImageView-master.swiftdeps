@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "5d520c3d1b87ec77f21b7223ceacf9e2"
+build_time: [549009028, 482718000]
+inputs:
+  "/Users/olddonkey/Documents/OpenSource/ShadowImageView/Sources/ShadowImageView.swift": [9223372036854775807, 0]
+  "/Users/olddonkey/Documents/OpenSource/ShadowImageView/ShadowImageView/ViewController.swift": [9223372036854775807, 0]
+  "/Users/olddonkey/Documents/OpenSource/ShadowImageView/ShadowImageView/AppDelegate.swift": [9223372036854775807, 0]

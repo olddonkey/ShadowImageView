@@ -137,7 +137,9 @@ class ShadowImageView: UIView {
         if let filter = CIFilter(name: "CIGaussianBlur") {
             filter.setValue(ciimage, forKey: kCIInputImageKey)
             filter.setValue(blurRadius, forKeyPath: kCIInputRadiusKey)
-            let context = CIContext(options: nil)
+            
+            // Due to a iOS 8 bug, we need to bridging CIContext from OC to avoid crashing
+            let context = CIContext.bridging_context(options: nil)
             if let output = filter.outputImage, let cgimage = context.createCGImage(output, from: ciimage.extent) {
                 return UIImage(cgImage: cgimage)
             }

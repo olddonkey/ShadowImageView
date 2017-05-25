@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21055841ED6A9B300E23378 /* Extension+CIContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A21055821ED6A9B300E23378 /* Extension+CIContext.h */; };
+		A21055851ED6A9B300E23378 /* Extension+CIContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A21055831ED6A9B300E23378 /* Extension+CIContext.m */; };
+		A21055861ED6A9B300E23378 /* Extension+CIContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A21055831ED6A9B300E23378 /* Extension+CIContext.m */; };
+		A21055871ED6A9D900E23378 /* ShadowImageView.swift in Headers */ = {isa = PBXBuildFile; fileRef = A21055811ED6A9B300E23378 /* ShadowImageView.swift */; };
 		A2240DC61EB55310006FBF24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DC51EB55310006FBF24 /* AppDelegate.swift */; };
 		A2240DC81EB55310006FBF24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DC71EB55310006FBF24 /* ViewController.swift */; };
 		A2240DCB1EB55310006FBF24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2240DC91EB55310006FBF24 /* Main.storyboard */; };
@@ -82,6 +86,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A21055811ED6A9B300E23378 /* ShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShadowImageView.swift; path = ../Sources/ShadowImageView.swift; sourceTree = "<group>"; };
+		A21055821ED6A9B300E23378 /* Extension+CIContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Extension+CIContext.h"; path = "../Sources/Extension+CIContext/Extension+CIContext.h"; sourceTree = "<group>"; };
+		A21055831ED6A9B300E23378 /* Extension+CIContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Extension+CIContext.m"; path = "../Sources/Extension+CIContext/Extension+CIContext.m"; sourceTree = "<group>"; };
 		A2240DC21EB55310006FBF24 /* ShadowImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2240DC51EB55310006FBF24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2240DC71EB55310006FBF24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +157,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A21055801ED6A98B00E23378 /* Extension+CIContext */ = {
+			isa = PBXGroup;
+			children = (
+				A21055821ED6A9B300E23378 /* Extension+CIContext.h */,
+				A21055831ED6A9B300E23378 /* Extension+CIContext.m */,
+				A21055811ED6A9B300E23378 /* ShadowImageView.swift */,
+			);
+			name = "Extension+CIContext";
+			sourceTree = "<group>";
+		};
 		A2240DB91EB55310006FBF24 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +239,7 @@
 		A2240E051EBE5D0F006FBF24 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A21055801ED6A98B00E23378 /* Extension+CIContext */,
 				A2240E081EBE5D8A006FBF24 /* ShadowImageView.swift */,
 			);
 			name = Sources;
@@ -252,6 +270,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21055871ED6A9D900E23378 /* ShadowImageView.swift in Headers */,
+				A21055841ED6A9B300E23378 /* Extension+CIContext.h in Headers */,
 				A2240E2B1EBF7E85006FBF24 /* ShadowImageViewFramework.h in Headers */,
 				A2240E371EBF7F00006FBF24 /* ShadowImageView.swift in Headers */,
 			);
@@ -365,6 +385,7 @@
 					A2240DC11EB55310006FBF24 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = KACMQNFS8H;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A2240DD51EB55310006FBF24 = {
@@ -382,6 +403,7 @@
 					A2240E181EBF7E84006FBF24 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = KACMQNFS8H;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					A2240E201EBF7E84006FBF24 = {
@@ -466,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2240E091EBE5D8A006FBF24 /* ShadowImageView.swift in Sources */,
+				A21055851ED6A9B300E23378 /* Extension+CIContext.m in Sources */,
 				A2240DC81EB55310006FBF24 /* ViewController.swift in Sources */,
 				A2240DC61EB55310006FBF24 /* AppDelegate.swift in Sources */,
 			);
@@ -492,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2240E381EBF7F07006FBF24 /* ShadowImageView.swift in Sources */,
+				A21055861ED6A9B300E23378 /* Extension+CIContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +623,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -642,6 +667,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -653,12 +679,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KACMQNFS8H;
 				INFOPLIST_FILE = ShadowImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olddonkey.ShadowImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -668,12 +697,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = KACMQNFS8H;
 				INFOPLIST_FILE = ShadowImageView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.olddonkey.ShadowImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -739,6 +770,7 @@
 		A2240E301EBF7E85006FBF24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -753,6 +785,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.olddonkey.ShadowImageViewFramework;
 				PRODUCT_NAME = ShadowImageView;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -762,6 +796,7 @@
 		A2240E311EBF7E85006FBF24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -776,6 +811,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.olddonkey.ShadowImageViewFramework;
 				PRODUCT_NAME = ShadowImageView;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/Extension+CIContext/ShadowImageView-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -856,6 +892,7 @@
 				A2240E311EBF7E85006FBF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2240E361EBF7E85006FBF24 /* Build configuration list for PBXNativeTarget "ShadowImageViewFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -864,6 +901,7 @@
 				A2240E331EBF7E85006FBF24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

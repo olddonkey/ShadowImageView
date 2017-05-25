@@ -1,6 +1,7 @@
 # ShadowImageView
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-brightgreen.svg)](https://github.com/Carthage/Carthage) 
-![CocoaPods Support](https://img.shields.io/badge/Cocoapods-compatible-brightgreen.svg) 
+
+![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)
+![CocoaPods Support](https://img.shields.io/badge/Cocoapods-compatible-4BC51D.svg) 
 ![Swift Version](https://img.shields.io/badge/Swift-3.0-orange.svg) 
 ![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg) 
 

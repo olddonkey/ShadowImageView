@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode8.3
-xcode_project: ShadowImageView.xcodeproj
-xcode_scheme: ShadowImageView
+
+script: xcodebuild clean && xcodebuild build -project ShadowImageView.xcodeproj -scheme ShadowImageViewFramework

@@ -155,6 +155,7 @@ SWIFT_CLASS("_TtC15ShadowImageView15ShadowImageView")
 @property (nonatomic) CGFloat shadowOffSetByX;
 /// Shadow offset value on y axis, postive -> right, negative -> left
 @property (nonatomic) CGFloat shadowOffSetByY;
+/// Shadow alpha value
 @property (nonatomic) CGFloat shadowAlpha;
 @property (nonatomic) UIViewContentMode contentMode;
 - (void)layoutSubviews;

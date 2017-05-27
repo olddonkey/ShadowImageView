@@ -69,7 +69,9 @@ class ShadowImageView: UIView {
             layoutShadow()
         }
     }
-
+    
+    
+    /// Shadow alpha value
     @IBInspectable
     public var shadowAlpha: CGFloat = 1 {
         didSet {

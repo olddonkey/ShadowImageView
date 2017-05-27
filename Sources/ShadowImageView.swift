@@ -99,19 +99,20 @@ class ShadowImageView: UIView {
             }
             let realImageSize = weakself.getRealImageSize(image)
             // Create a containerView to hold the image should apply gaussian blur.
-            let containerView = UIView(frame: CGRect(origin: .zero, size: realImageSize.scaled(by: 1.4)))
-            containerView.backgroundColor = .clear
-            let blurImageView = UIImageView(frame: CGRect(origin: .zero, size: realImageSize))
-            blurImageView.center = containerView.center
-            blurImageView.image = image
-            blurImageView.layer.cornerRadius = weakself.imageCornerRaidus
-            blurImageView.layer.masksToBounds = true
-            containerView.addSubview(blurImageView)
+            let containerLayer = CALayer()
+            containerLayer.frame = CGRect(origin: .zero, size: realImageSize.scaled(by: 1.4))
+            containerLayer.backgroundColor = UIColor.clear.cgColor
+            let blurImageLayer = CALayer()
+            blurImageLayer.frame = CGRect(origin: CGPoint.init(x: realImageSize.width*0.2, y: realImageSize.height*0.2), size: realImageSize)
+            blurImageLayer.contents = image.cgImage
+            blurImageLayer.cornerRadius = weakself.imageCornerRaidus
+            blurImageLayer.masksToBounds = true
+            containerLayer.addSublayer(blurImageLayer)
             
             var containerImage = UIImage()
             // Get the UIImage from a UIView.
-            if containerView.frame.size != CGSize.zero {
-                containerImage = UIImage(view: containerView)
+            if containerLayer.frame.size != CGSize.zero {
+                containerImage = UIImage(layer: containerLayer)
             }else {
                 containerImage = UIImage()
             }
@@ -169,7 +170,7 @@ class ShadowImageView: UIView {
     }
 
     private func layoutShadow() {
-
+        
         generateBlurBackground()
         guard let image = image else {
             return
@@ -228,14 +229,13 @@ private extension UIImage {
         draw(in: CGRect(origin: .zero, size: canvasSize))
         return UIGraphicsGetImageFromCurrentImageContext()
     }
-
-
-    /// Method to create a UIImage from UIView
+    
+    /// Method to create a UIImage from CALayer
     ///
-    /// - Parameter view: the input view
-    convenience init(view: UIView) {
-        UIGraphicsBeginImageContext(view.frame.size)
-        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+    /// - Parameter layer: input Layer
+    convenience init(layer: CALayer) {
+        UIGraphicsBeginImageContext(layer.frame.size)
+        layer.render(in: UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         if let cgImage = image?.cgImage {

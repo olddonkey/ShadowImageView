@@ -97,6 +97,7 @@ If you want to add by storyboard or nib, just drap a UIView into your canvas, an
 
 The main development of ShadowImageView is based on Swift 3.
 
+## Support
 
 ### Contact
 
@@ -111,5 +112,12 @@ ShadowImageView is released under the MIT license. See LICENSE for details.
 ### Kudos
 
 Thanks to [PierrePerrin](https://github.com/PierrePerrin), his [PPMusicImageShadow](https://github.com/PierrePerrin/PPMusicImageShadow) inspires me, thought the implementation is diffrent, but the main idea comes from GaussianBlur.
+
+
+### App using ShadowImageView
+
+1. [优读](https://itunes.apple.com/us/app/优读-订阅收藏和碎片知识管理神器/id1175225244) 
+
+    ![youdu](Screenshots/youdu.png)
 
 

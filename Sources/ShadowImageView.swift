@@ -125,7 +125,7 @@ class ShadowImageView: UIView {
                     return
             }
 
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async {
                 self?.blurredImageView.image = blurredImage
             }
         }
@@ -174,24 +174,25 @@ class ShadowImageView: UIView {
     private func layoutShadow() {
         
         generateBlurBackground()
-        guard let image = image else {
-            return
+        
+        DispatchQueue.main.async {
+            guard let image = self.image else {
+                return
+            }
+            
+            let realImageSize = self.getRealImageSize(image)
+            
+            self.imageView.frame = CGRect(origin: .zero, size: realImageSize)
+            self.imageView.center = CGPoint(x: self.bounds.width/2, y: self.bounds.height/2)
+            
+            let newSize = realImageSize.scaled(by: 1.4 * (1 + self.shadowRadiusOffSetPercentage/100))
+            
+            self.blurredImageView.frame = CGRect(origin: .zero, size: newSize)
+            self.blurredImageView.center = CGPoint(x: self.bounds.width/2 + self.shadowOffSetByX, y: self.bounds.height/2 + self.shadowOffSetByY)
+            self.blurredImageView.contentMode = self.contentMode
+            self.blurredImageView.alpha = self.shadowAlpha
         }
-
-        let realImageSize = getRealImageSize(image)
-
-        imageView.frame = CGRect(origin: .zero, size: realImageSize)
-        imageView.center = CGPoint(x: bounds.width/2, y: bounds.height/2)
-
-        let newSize = realImageSize.scaled(by: 1.4 * (1 + shadowRadiusOffSetPercentage/100))
-
-        blurredImageView.frame = CGRect(origin: .zero, size: newSize)
-        blurredImageView.center = CGPoint(x: bounds.width/2 + shadowOffSetByX, y: bounds.height/2 + shadowOffSetByY)
-        blurredImageView.contentMode = contentMode
-        blurredImageView.alpha = shadowAlpha
-
-        addSubview(blurredImageView)
-        sendSubview(toBack: blurredImageView)
+        
     }
 
     private func layoutImageView() {
@@ -202,6 +203,8 @@ class ShadowImageView: UIView {
         imageView.layer.masksToBounds = true
         imageView.contentMode = contentMode
         addSubview(imageView)
+        addSubview(blurredImageView)
+        sendSubview(toBack: blurredImageView)
     }
 
 }

@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var shadowImage: ShadowImageView!
+    @IBOutlet weak var shadowAlphaSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    @IBAction func sliderDidChange(_ sender: UISlider) {
+        shadowImage.shadowAlpha = CGFloat(sender.value)
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,7 +10,6 @@
 		A21055841ED6A9B300E23378 /* Extension+CIContext.h in Headers */ = {isa = PBXBuildFile; fileRef = A21055821ED6A9B300E23378 /* Extension+CIContext.h */; };
 		A21055851ED6A9B300E23378 /* Extension+CIContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A21055831ED6A9B300E23378 /* Extension+CIContext.m */; };
 		A21055861ED6A9B300E23378 /* Extension+CIContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A21055831ED6A9B300E23378 /* Extension+CIContext.m */; };
-		A21055871ED6A9D900E23378 /* ShadowImageView.swift in Headers */ = {isa = PBXBuildFile; fileRef = A21055811ED6A9B300E23378 /* ShadowImageView.swift */; };
 		A2240DC61EB55310006FBF24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DC51EB55310006FBF24 /* AppDelegate.swift */; };
 		A2240DC81EB55310006FBF24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2240DC71EB55310006FBF24 /* ViewController.swift */; };
 		A2240DCB1EB55310006FBF24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2240DC91EB55310006FBF24 /* Main.storyboard */; };
@@ -86,7 +85,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A21055811ED6A9B300E23378 /* ShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShadowImageView.swift; path = ../Sources/ShadowImageView.swift; sourceTree = "<group>"; };
 		A21055821ED6A9B300E23378 /* Extension+CIContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Extension+CIContext.h"; path = "../Sources/Extension+CIContext/Extension+CIContext.h"; sourceTree = "<group>"; };
 		A21055831ED6A9B300E23378 /* Extension+CIContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Extension+CIContext.m"; path = "../Sources/Extension+CIContext/Extension+CIContext.m"; sourceTree = "<group>"; };
 		A2240DC21EB55310006FBF24 /* ShadowImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShadowImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +160,6 @@
 			children = (
 				A21055821ED6A9B300E23378 /* Extension+CIContext.h */,
 				A21055831ED6A9B300E23378 /* Extension+CIContext.m */,
-				A21055811ED6A9B300E23378 /* ShadowImageView.swift */,
 			);
 			name = "Extension+CIContext";
 			sourceTree = "<group>";
@@ -270,7 +267,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A21055871ED6A9D900E23378 /* ShadowImageView.swift in Headers */,
 				A21055841ED6A9B300E23378 /* Extension+CIContext.h in Headers */,
 				A2240E2B1EBF7E85006FBF24 /* ShadowImageViewFramework.h in Headers */,
 				A2240E371EBF7F00006FBF24 /* ShadowImageView.swift in Headers */,

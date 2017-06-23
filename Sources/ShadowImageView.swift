@@ -28,11 +28,13 @@ class ShadowImageView: UIView {
     @IBInspectable
     public var image: UIImage? {
         set {
-            imageView.image = newValue
-            layoutShadow()
+            DispatchQueue.main.async {
+                self.imageView.image = newValue
+                self.layoutShadow()
+            }
         }
         get {
-            return imageView.image
+            return self.imageView.image
         }
     }
 
@@ -92,14 +94,14 @@ class ShadowImageView: UIView {
 
     /// Generate the background color and set it to a image view.
     private func generateBlurBackground() {
+        guard let image = image else{
+            return
+        }
+        let realImageSize = getRealImageSize(image)
         DispatchQueue.global(qos: .userInteractive).async { [weak self] in
             guard let weakself = self else {
                 return
             }
-            guard let image = weakself.image else{
-                return
-            }
-            let realImageSize = weakself.getRealImageSize(image)
             // Create a containerView to hold the image should apply gaussian blur.
             let containerLayer = CALayer()
             containerLayer.frame = CGRect(origin: .zero, size: realImageSize.scaled(by: 1.4))
@@ -173,9 +175,8 @@ class ShadowImageView: UIView {
 
     private func layoutShadow() {
         
-        generateBlurBackground()
-        
         DispatchQueue.main.async {
+            self.generateBlurBackground()
             guard let image = self.image else {
                 return
             }

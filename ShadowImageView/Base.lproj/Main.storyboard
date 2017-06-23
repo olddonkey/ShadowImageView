@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,9 +29,9 @@
                                     <constraint firstAttribute="width" constant="300" id="B2w-QQ-JTJ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="cd_cover.jpg"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="lotus-978659_1920.jpg"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusOffSetPercentage">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="imageCornerRaidus">
                                         <real key="value" value="6"/>
@@ -47,19 +47,34 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k3y-ng-vPb">
+                                <rect key="frame" x="85" y="533" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="byK-y0-UVH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="caX-Bg-yiU"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k3y-ng-vPb" firstAttribute="top" secondItem="A1O-g4-CLD" secondAttribute="bottom" constant="50" id="9Di-dS-X3d"/>
+                            <constraint firstItem="k3y-ng-vPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PgR-lH-QwN"/>
                             <constraint firstItem="A1O-g4-CLD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SZY-TL-d16"/>
                             <constraint firstItem="A1O-g4-CLD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tFS-UY-e6d"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="shadowAlphaSlider" destination="k3y-ng-vPb" id="jHp-Bb-4O6"/>
+                        <outlet property="shadowImage" destination="A1O-g4-CLD" id="eTP-yB-IEA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <resources>
-        <image name="cd_cover.jpg" width="420" height="420"/>
+        <image name="lotus-978659_1920.jpg" width="500" height="500"/>
     </resources>
 </document>

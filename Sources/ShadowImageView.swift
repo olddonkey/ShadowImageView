@@ -10,7 +10,7 @@ import UIKit
 import CoreGraphics
 
 @IBDesignable
-class ShadowImageView: UIView {
+public class ShadowImageView: UIView {
 
     private var imageView = UIImageView()
     private var blurredImageView = UIImageView()
@@ -81,13 +81,13 @@ class ShadowImageView: UIView {
         }
     }
     
-    override var contentMode: UIViewContentMode {
+    override public var contentMode: UIViewContentMode {
         didSet{
             layoutShadow()
         }
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         layoutShadow()
     }
@@ -165,7 +165,7 @@ class ShadowImageView: UIView {
         }
     }
 
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         backgroundColor = .clear
         if newSuperview != nil {

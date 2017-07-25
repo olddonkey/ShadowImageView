@@ -111,7 +111,7 @@ ShadowImageView is released under the MIT license. See LICENSE for details.
 
 ### Kudos
 
-Thanks to [PierrePerrin](https://github.com/PierrePerrin), his [PPMusicImageShadow](https://github.com/PierrePerrin/PPMusicImageShadow) inspires me, thought the implementation is diffrent, but the main idea comes from GaussianBlur.
+Thanks to [PierrePerrin](https://github.com/PierrePerrin), his [PPMusicImageShadow](https://github.com/PierrePerrin/PPMusicImageShadow) inspires me, though the implementation is diffrent, the main idea comes from GaussianBlur.
 
 
 ### App using ShadowImageView
